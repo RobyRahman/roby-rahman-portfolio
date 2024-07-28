@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roby Rahman's Portfolio - Full Stack Developer showcasing projects and skills.">
+    <meta name="keywords" content="Roby Rahman, Full Stack Developer, Portfolio, Projects">
+    <meta name="author" content="Roby Rahman">
+    <title>Roby Rahman's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Roby Rahman</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+        <input type="text" id="search-box" placeholder="Search...">
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I'm Roby Rahman, a Full Stack Developer. Explore my projects and get to know me better!</p>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate developer with experience in both frontend and backend technologies...</p>
+        </section>
+        <section id="portfolio">
+            <h2>My Projects</h2>
+            <div id="projects"></div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="_replyto" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+            <div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Roby Rahman</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
